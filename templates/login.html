@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label for="user_type">Login as:</label>
+            <select id="user_type" name="user_type" required>
+                <option value="student">Student</option>
+                <option value="mentor">Mentor</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Not registered? <br><a href="/register_student">Register as Student</a> </br><a href="/register_mentor">Register as Mentor</a></p>
+    </div>
+</body>
+</html>

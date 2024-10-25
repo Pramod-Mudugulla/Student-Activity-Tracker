@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Activity Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Student Activity Tracker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Diaries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mentors</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Student Activity Tracker</h1>
+        <form id="register-form">
+            <h2>Register</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <form id="login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <form id="add-activity-form">
+            <h2>Add Activity</h2>
+            <div class="form-group">
+                <label for="activity_name">Activity Name:</label>
+                <input type="text" class="form-control" id="activity_name" name="activity_name">
+            </div>
+            <div class="form-group">
+                <label for="points">Points:</label>
+                <input type="number" class="form-control" id="points" name="points">
+            </div>
+            <div class="form-group">
+                <label for="certificate_url">Certificate URL:</label>
+                <input type="text" class="form-control" id="certificate_url" name="certificate_url">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Activity</button>
+        </form>
+        <form id="add-diary-form">
+            <h2>Add Diary</h2>
+            <div class="form-group">
+
